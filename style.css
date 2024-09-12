@@ -1,0 +1,119 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+:root {
+    --bg-color: #5f514e;
+    --primary-color: #192028;
+    --nd-color: #85df47;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'montserrat', sans-serif;
+}
+
+.app {
+    padding: 3em;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 2.5rem 0;
+
+}
+
+.header h1 {
+    color: var(--nd-color);
+    text-align: center;
+    font-size: 2.2em;
+    padding-bottom: 1em;
+    letter-spacing: 1rem;
+    text-shadow: 1px 4px 14px rgba(95, 81, 78, 0.74);
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#todoinput {
+    width: 75%;
+    height: 3vh;
+}
+
+#addingbutton {
+    padding: 0 2em;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid var(--nd-color);
+    border-right: 1px solid rgba(132, 223, 71, 0);
+    color: white;
+    font-weight: 700;
+    transition: border .9s ease;
+    
+}
+
+#addingbutton:hover{
+    border-right: 1px solid var(--nd-color);
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.to-do {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 8px 0;
+}
+
+.status {
+    background-color: yellow;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.nameof{
+    color: whitesmoke;
+    font-weight: 550;
+    font-size: 14px;
+    padding-left: .5rem;
+    margin-right: auto;
+
+}
+
+#applied {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+}
+
+#rejected {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+#applied, #rejected:hover {
+    cursor: pointer;
+}
+.statusdiv{
+    display: flex;
+    margin-right: 15px;
+}
