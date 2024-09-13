@@ -117,3 +117,10 @@ body {
     display: flex;
     margin-right: 15px;
 }
+
+@media (max-width: 1079px) {
+    .app {
+      width: 95%;
+      height: 85%;
+    }
+  }
